@@ -1,0 +1,41 @@
+@each $name, $size in $space {
+  @each $side in $sides {
+    .has-padding-#{$side}-#{$name} {
+      @include padding($name, $side);
+    }
+    .has-margin-#{$side}-#{$name} {
+      @include margin($name, $side);
+    }
+  }
+
+  @each $direction in $directions {
+    .is-spaced-#{$direction}-#{$name} {
+      @include spaced($size, $direction);
+    }
+  }
+  .is-spaced-#{$name} {
+    @include spaced($size);
+  }
+
+  .has-padding-#{$name} {
+    @include padding($name);
+  }
+  .has-margin-#{$name} {
+    @include margin($name);
+  }
+}
+
+@each $side in $sides {
+  .has-no-padding-#{$side} {
+    @include no-padding($side);
+  }
+  .has-no-margin-#{$side} {
+    @include no-margin($side);
+  }
+}
+.has-no-padding {
+  @include no-padding;
+}
+.has-no-margin {
+  @include no-margin;
+}

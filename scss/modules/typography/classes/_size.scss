@@ -1,0 +1,5 @@
+@each $name, $size in $font-sizes {
+  .has-text-#{$name} {
+    @include font-size($name);
+  }
+}

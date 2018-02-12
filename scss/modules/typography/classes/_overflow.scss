@@ -1,0 +1,5 @@
+@each $overflow in $text-overflows {
+  .has-text-overflow-#{$overflow} {
+    text-overflow: $overflow;
+  }
+}

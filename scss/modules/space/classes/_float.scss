@@ -1,0 +1,9 @@
+.is-float-left {
+  @include float(left);
+}
+.is-float-right {
+  @include float(right);
+}
+.is-clearfix {
+  @include clearfix;
+}

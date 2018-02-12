@@ -1,0 +1,53 @@
+@mixin padding($size, $side: null) {
+  @if ($side == null) {
+    padding: space($size);
+  }
+  @else {
+    padding-#{$side}: space($size);
+  }
+}
+
+@mixin margin($size, $side: null) {
+  @if ($side == null) {
+    margin: space($size);
+  }
+  @else {
+    margin-#{$side}: space($size);
+  }
+}
+
+@mixin no-padding($side: null) {
+  @if ($side == null) {
+    padding: 0 !important;
+  }
+  @else {
+    padding-#{$side}: 0 !important;
+  }
+}
+
+@mixin no-margin($side: null) {
+  @if ($side == null) {
+    margin: 0 !important;
+  }
+  @else {
+    margin-#{$side}: 0 !important;
+  }
+}
+
+@mixin spaced($size, $direction: null) {
+  @if ($direction == null) {
+    @each $dir in $directions {
+      @include spaced($size, $dir);
+    }
+  }
+  @else {
+    &:not(:first-of-type) {
+      $side: direction-begin($direction);
+      margin-#{$side}: #{space($size) / 2};
+    }
+    &:not(:last-of-type) {
+      $side: direction-end($direction);
+      margin-#{$side}: #{space($size) / 2};
+    }
+  }
+}

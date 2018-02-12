@@ -1,0 +1,10 @@
+@mixin float($side) {
+  float: $side;
+}
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

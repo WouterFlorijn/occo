@@ -1,0 +1,9 @@
+@mixin default-radius {
+  border-radius: $default-radius;
+}
+@mixin rounded {
+  border-radius: 9999px;
+}
+@mixin round {
+  border-radius: 100%;
+}

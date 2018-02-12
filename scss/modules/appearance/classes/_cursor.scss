@@ -1,0 +1,5 @@
+@each $cursor in $cursors {
+  .has-cursor-#{$cursor} {
+    cursor: $cursor;
+  }
+}

@@ -1,0 +1,11 @@
+@each $overflow in $overflows {
+  .has-overflow-#{$overflow} {
+    overflow: $overflow;
+  }
+  .has-overflow-#{$overflow}-x {
+    overflow-x: $overflow;
+  }
+  .has-overflow-#{$overflow}-y {
+    overflow-y: $overflow;
+  }
+}

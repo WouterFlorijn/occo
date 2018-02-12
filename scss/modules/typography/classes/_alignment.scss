@@ -1,0 +1,5 @@
+@each $alignment in $text-alignments {
+  .has-text-#{$alignment} {
+    text-align: $alignment;
+  }
+}

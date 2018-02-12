@@ -1,0 +1,9 @@
+@each $display in $displays {
+  .is-display-#{$display} {
+    display: $display;
+  }
+}
+
+.is-hidden {
+  display: none;
+}

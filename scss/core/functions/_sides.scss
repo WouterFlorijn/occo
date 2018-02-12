@@ -1,0 +1,44 @@
+@function opposite($side)
+{
+  $map: (
+    top:    bottom,
+    bottom: top,
+    left:   right,
+    right:  left
+    );
+  @return map-get($map, $side);
+}
+
+@function tangent($side)
+{
+  $map: (
+    top:    left,
+    bottom: left,
+    left:   top,
+    right:  top
+    );
+  @return map-get($map, $side);
+}
+
+@function direction-begin($direction) {
+  $map: (
+    v: top,
+    h: left
+    );
+  @return map-get($map, $side);
+}
+@function direction-end($direction) {
+  $map: (
+    v: bottom,
+    h: right
+    );
+  @return map-get($map, $side);
+}
+
+@function direction-dimension($direction) {
+  $map: (
+    v: height,
+    h: width
+    );
+  @return map-get($map, $side);
+}

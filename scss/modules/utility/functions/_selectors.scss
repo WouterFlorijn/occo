@@ -1,0 +1,27 @@
+@function text-input-selectors($types: (), $modifier: '') {
+  $return: ();
+
+  @if ($types == ()) {
+    $types: $input-types;
+  }
+
+  @each $type in $types {
+    $return: append($return, unquote('[type=\'#{$type}\']#{$modifier}'), comma);
+  }
+
+  @return $return;
+}
+
+@function heading-selectors($tags: (), $modifier: '') {
+  $return: ();
+
+  @if ($tags == ()) {
+    $types: $heading-tags;
+  }
+
+  @each $h in $tags {
+    $return: append($return, unquote('#{$h}#{$modifier}'), comma);
+  }
+
+  @return $return;
+}

@@ -1,0 +1,75 @@
+$brand-colors: (
+	facebook: (
+		500: #3B5998,
+		),
+	youtube: (
+		500: #CD201F,
+		),
+	linkedin: (
+		500: #0077B5,
+		),
+	twitter: (
+		500: #55ACEE,
+		),
+	instagram: (
+		500: #405DE6,
+		),
+	bitbucket: (
+		500: #205081,
+		),
+	github: (
+		500: #4183C4,
+		),
+	google: (
+		500:    #4285F4,
+		blue:   #4285F4,
+		green:  #34A853,
+		yellow: #FBBC05,
+		red:    #EA4335,
+		),
+	google-plus: (
+		500: #DC4E41,
+		),
+	slack: (
+		500:    #6ECADC,
+		blue:   #6ECADC,
+		yellow: #E9A820,
+		pink:   #E01563,
+		green:  #3EB991,
+		),
+	imgur: (
+		500: #85BF25,
+		),
+	laravel: (
+		500: #F55247,
+		),
+	medium: (
+		500: #00AB6B,
+		),
+	reddit: (
+		500: #FF4500,
+		),
+	skype: (
+		500: #00AFF0,
+		),
+	spotify: (
+		500: #2EBD59,
+		),
+	stack-overflow: (
+		500: #FE7A15,
+		),
+	tumblr: (
+		500: #35465C,
+		),
+	twitch: (
+		500: #6441A5,
+		),
+	vine: (
+		500: #00B488,
+		),
+	whatsapp: (
+		500: #43D854,
+		),
+	);
+
+$colors: map-merge($colors, (brand: $brand-colors));

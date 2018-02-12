@@ -1,0 +1,12 @@
+@function default-darken($color) {
+  @return darken($color, $darken-factor);
+}
+@function default-lighten($color) {
+  @return lighten($color, $lighten-factor);
+}
+@function default-saturate($color) {
+  @return saturate($color, $saturate-factor);
+}
+@function default-desaturate($color) {
+  @return desaturate($color, $desaturate-factor);
+}

@@ -1,0 +1,11 @@
+@mixin font-size($name) {
+  font-size: map-get($font-sizes, $name);
+}
+
+@mixin font-weight($name) {
+  font-weight: map-get($font-weights, $name);
+}
+
+@mixin one-line {
+  white-space: nowrap;
+}

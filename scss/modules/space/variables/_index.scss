@@ -1,0 +1,41 @@
+$space: (
+  unit:   1px,
+  nano:   2px,
+  micro:  4px,
+  tiny:   8px,
+  small:  16px,
+  medium: 32px,
+  large:  64px,
+  huge:   128px
+  ) !default;
+
+$positions: (
+  static,
+  relative,
+  absolute,
+  fixed,
+  sticky
+  ) !default;
+
+$displays: (
+  inline,
+  block,
+  inline-block,
+  flex,
+  inline-flex,
+  list-item,
+  run-in,
+  table,
+  table-caption,
+  table-column-group,
+  table-header-group,
+  table-footer-group,
+  table-row-group,
+  table-cell,
+  table-column,
+  table-row,
+  grid,
+  inline-grid,
+  subgrid,
+  none
+  ) !default;

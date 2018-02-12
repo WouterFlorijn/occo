@@ -1,0 +1,5 @@
+@each $name, $weight in $font-weights {
+  .has-text-#{$name} {
+    @include font-weight($name);
+  }
+}

@@ -1,0 +1,3 @@
+@mixin background-color($name) {
+  background-color: map-get($palette, $name);
+}

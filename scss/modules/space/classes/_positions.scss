@@ -1,0 +1,12 @@
+@each $position in $positions {
+  .is-pos-#{$position} {
+    position: $position;
+  }
+}
+
+@each $side in $sides {
+  .is-#{$side} {
+    position: absolute;
+    #{$side}: 0;
+  }
+}

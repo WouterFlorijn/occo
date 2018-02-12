@@ -1,0 +1,32 @@
+$font-sizes: (
+  small: 0.75rem,
+  base:  1.00rem,
+  large: 1.25rem
+  ) !default;
+
+$font-weights: (
+  lighter: lighter,
+  normal: normal,
+  bolder: bolder,
+  bold: bold
+  ) !default;
+
+$text-alignments: (
+  centered,
+  left,
+  right,
+  justify
+  ) !default;
+
+$text-transforms: (
+  lowercase,
+  uppercase,
+  capitalize,
+  none
+  ) !default;
+
+$text-overflows: (
+  clip,
+  ellipsis,
+  fade
+  ) !default;

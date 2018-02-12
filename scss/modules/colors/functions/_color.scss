@@ -1,0 +1,6 @@
+@function color($family, $color, $shade: 500) {
+  $map:    map-get($colors, $family);
+  $group:  map-get($map, $color);
+  $result: map-get($group, $shade);
+  @return $result;
+}

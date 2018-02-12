@@ -1,0 +1,3 @@
+@each $transform in $text-transforms {
+  .has-text-#{$transform}: $transform;
+}
