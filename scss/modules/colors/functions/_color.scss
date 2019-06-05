@@ -1,6 +1,10 @@
-@function color($family, $color, $shade: 500) {
-  $map:    map-get($colors, $family);
-  $group:  map-get($map, $color);
+@function color($family, $name, $shade: 500) {
+  $map:    map-get($occo-colors, $family);
+  $group:  map-get($map, $name);
   $result: map-get($group, $shade);
   @return $result;
+}
+
+@function palette($name) {
+  @return map-get($occo-palette, $name);
 }

@@ -2,7 +2,7 @@
   $return: ();
 
   @if ($types == ()) {
-    $types: $input-types;
+    $types: $occo-input-types;
   }
 
   @each $type in $types {
@@ -16,7 +16,7 @@
   $return: ();
 
   @if ($tags == ()) {
-    $types: $heading-tags;
+    $types: $occo-heading-tags;
   }
 
   @each $h in $tags {

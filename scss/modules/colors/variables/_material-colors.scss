@@ -1,4 +1,4 @@
-$material-colors: (
+$occo-material-colors: (
 	red: (
 		50:   #FFEBEE,
 		100:  #FFCDD2,
@@ -311,4 +311,4 @@ $material-colors: (
 		),
 	);
 
-$colors: map-merge($colors, (material: $material-colors));
+$occo-colors: map-merge($occo-colors, (material: $occo-material-colors));

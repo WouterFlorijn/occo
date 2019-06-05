@@ -25,14 +25,14 @@
     v: top,
     h: left
     );
-  @return map-get($map, $side);
+  @return map-get($map, $direction);
 }
 @function direction-end($direction) {
   $map: (
     v: bottom,
     h: right
     );
-  @return map-get($map, $side);
+  @return map-get($map, $direction);
 }
 
 @function direction-dimension($direction) {
@@ -40,5 +40,5 @@
     v: height,
     h: width
     );
-  @return map-get($map, $side);
+  @return map-get($map, $direction);
 }

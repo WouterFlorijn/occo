@@ -1,4 +1,4 @@
-@each $alignment in $text-alignments {
+@each $alignment in $occo-text-alignments {
   .has-text-#{$alignment} {
     text-align: $alignment;
   }

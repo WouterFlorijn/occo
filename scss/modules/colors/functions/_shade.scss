@@ -1,12 +1,12 @@
 @function default-darken($color) {
-  @return darken($color, $darken-factor);
+  @return darken($color, $occo-darken-factor);
 }
 @function default-lighten($color) {
-  @return lighten($color, $lighten-factor);
+  @return lighten($color, $occo-lighten-factor);
 }
 @function default-saturate($color) {
-  @return saturate($color, $saturate-factor);
+  @return saturate($color, $occo-saturate-factor);
 }
 @function default-desaturate($color) {
-  @return desaturate($color, $desaturate-factor);
+  @return desaturate($color, $occo-desaturate-factor);
 }

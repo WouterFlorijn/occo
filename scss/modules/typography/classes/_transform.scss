@@ -1,3 +1,5 @@
-@each $transform in $text-transforms {
-  .has-text-#{$transform}: $transform;
+@each $transform in $occo-text-transforms {
+  .has-text-#{$transform} {
+    text-transform: $transform;
+  }
 }

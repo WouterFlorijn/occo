@@ -1,5 +1,5 @@
-@each $name, $size in $space {
-  @each $side in $sides {
+@each $name, $size in $occo-space {
+  @each $side in $occo-sides {
     .has-padding-#{$side}-#{$name} {
       @include padding($name, $side);
     }
@@ -7,25 +7,32 @@
       @include margin($name, $side);
     }
   }
-
-  @each $direction in $directions {
-    .is-spaced-#{$direction}-#{$name} {
-      @include spaced($size, $direction);
-    }
-  }
-  .is-spaced-#{$name} {
-    @include spaced($size);
-  }
-
   .has-padding-#{$name} {
     @include padding($name);
   }
   .has-margin-#{$name} {
     @include margin($name);
   }
+
+  @each $direction in $occo-directions {
+    .is-spaced-#{$direction}-#{$name} {
+      @include spaced($size, $direction);
+    }
+    .has-padding-#{$direction}-#{$name} {
+      @include padding($name, direction-begin($direction));
+      @include padding($name, direction-end($direction));
+    }
+    .has-margin-#{$direction}-#{$name} {
+      @include margin($name, direction-begin($direction));
+      @include margin($name, direction-end($direction));
+    }
+  }
+  .is-spaced-#{$name} {
+    @include spaced($size);
+  }
 }
 
-@each $side in $sides {
+@each $side in $occo-sides {
   .has-no-padding-#{$side} {
     @include no-padding($side);
   }

@@ -1,2 +1,11 @@
-$sides: (top, bottom, left, right) !default;
-$directions: (h, v) !default;
+$occo-sides: (
+  top,
+  bottom,
+  left,
+  right,
+) !default;
+
+$occo-directions: (
+  h,
+  v,
+) !default;

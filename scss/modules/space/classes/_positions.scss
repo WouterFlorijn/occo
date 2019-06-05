@@ -1,10 +1,10 @@
-@each $position in $positions {
+@each $position in $occo-positions {
   .is-pos-#{$position} {
     position: $position;
   }
 }
 
-@each $side in $sides {
+@each $side in $occo-sides {
   .is-#{$side} {
     position: absolute;
     #{$side}: 0;

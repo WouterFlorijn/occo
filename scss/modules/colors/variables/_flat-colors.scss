@@ -1,4 +1,4 @@
-$flat-colors: (
+$occo-flat-colors: (
 	turquoise: (
 		50:  #e8f8f5,
 		100: #d1f2eb,
@@ -241,4 +241,4 @@ $flat-colors: (
 		),
 	);
 
-$colors: map-merge($colors, (flat: $flat-colors));
+$occo-colors: map-merge($occo-colors, (flat: $occo-flat-colors));

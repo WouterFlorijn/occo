@@ -1,9 +1,9 @@
 @mixin font-size($name) {
-  font-size: map-get($font-sizes, $name);
+  font-size: map-get($occo-font-sizes, $name);
 }
 
 @mixin font-weight($name) {
-  font-weight: map-get($font-weights, $name);
+  font-weight: map-get($occo-font-weights, $name);
 }
 
 @mixin one-line {

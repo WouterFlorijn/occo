@@ -1,32 +1,32 @@
-$font-sizes: (
+$occo-font-sizes: (
   small: 0.75rem,
   base:  1.00rem,
-  large: 1.25rem
-  ) !default;
+  large: 1.25rem,
+) !default;
 
-$font-weights: (
+$occo-font-weights: (
   lighter: lighter,
   normal: normal,
   bolder: bolder,
-  bold: bold
-  ) !default;
+  bold: bold,
+) !default;
 
-$text-alignments: (
-  centered,
+$occo-text-alignments: (
+  center,
   left,
   right,
-  justify
-  ) !default;
+  justify,
+) !default;
 
-$text-transforms: (
+$occo-text-transforms: (
   lowercase,
   uppercase,
   capitalize,
-  none
-  ) !default;
+  none,
+) !default;
 
-$text-overflows: (
+$occo-text-overflows: (
   clip,
   ellipsis,
-  fade
-  ) !default;
+  fade,
+) !default;

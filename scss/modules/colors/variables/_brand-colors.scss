@@ -1,4 +1,4 @@
-$brand-colors: (
+$occo-brand-colors: (
 	facebook: (
 		500: #3B5998,
 		),
@@ -72,4 +72,4 @@ $brand-colors: (
 		),
 	);
 
-$colors: map-merge($colors, (brand: $brand-colors));
+$occo-colors: map-merge($occo-colors, (brand: $occo-brand-colors));

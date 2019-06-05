@@ -1,4 +1,4 @@
-$input-types: (
+$occo-input-types: (
   text,
   password,
   date,
@@ -12,14 +12,14 @@ $input-types: (
   tel,
   time,
   url,
-  color
-  ) !default;
+  color,
+) !default;
 
-$heading-tags: (
+$occo-heading-tags: (
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6
-  ) !default;
+  h6,
+) !default;

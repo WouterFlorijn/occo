@@ -1,4 +1,4 @@
-@each $display in $displays {
+@each $display in $occo-displays {
   .is-display-#{$display} {
     display: $display;
   }

@@ -36,18 +36,18 @@
 
 @mixin spaced($size, $direction: null) {
   @if ($direction == null) {
-    @each $dir in $directions {
+    @each $dir in $occo-directions {
       @include spaced($size, $dir);
     }
   }
   @else {
     &:not(:first-of-type) {
       $side: direction-begin($direction);
-      margin-#{$side}: #{space($size) / 2};
+      margin-#{$side}: space($size);
     }
     &:not(:last-of-type) {
       $side: direction-end($direction);
-      margin-#{$side}: #{space($size) / 2};
+      margin-#{$side}: space($size);
     }
   }
 }

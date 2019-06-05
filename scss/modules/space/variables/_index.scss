@@ -1,4 +1,4 @@
-$space: (
+$occo-space: (
   unit:   1px,
   nano:   2px,
   micro:  4px,
@@ -6,18 +6,18 @@ $space: (
   small:  16px,
   medium: 32px,
   large:  64px,
-  huge:   128px
-  ) !default;
+  huge:   128px,
+) !default;
 
-$positions: (
+$occo-positions: (
   static,
   relative,
   absolute,
   fixed,
-  sticky
-  ) !default;
+  sticky,
+) !default;
 
-$displays: (
+$occo-displays: (
   inline,
   block,
   inline-block,
@@ -37,5 +37,5 @@ $displays: (
   grid,
   inline-grid,
   subgrid,
-  none
-  ) !default;
+  none,
+) !default;

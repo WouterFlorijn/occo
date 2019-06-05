@@ -1,4 +1,4 @@
-@each $cursor in $cursors {
+@each $cursor in $occo-cursors {
   .has-cursor-#{$cursor} {
     cursor: $cursor;
   }

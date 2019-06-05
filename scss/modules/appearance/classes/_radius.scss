@@ -1,0 +1,9 @@
+.has-radius {
+  @include radius;
+}
+.is-rounded {
+  @include rounded;
+}
+.is-round {
+  @include round;
+}
