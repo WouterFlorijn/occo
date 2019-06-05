@@ -1,6 +1,6 @@
 @each $name, $size in $occo-space {
-  $short-side: short-side($side);
   @each $side in $occo-sides {
+    $short-side: short-side($side);
     .has-padding-#{$side}-#{$name}, .has-p#{$short-side}-#{$name} {
       @include padding($name, $side);
     }
