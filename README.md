@@ -41,7 +41,7 @@ Mixins and classes generally overlap in terms of functionality. This allows you 
 
 ```scss
 .my-rounded-class {
-  @extends .is-round;
+  @extend .is-round;
 }
 
 .my-other-rounded-class {
