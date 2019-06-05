@@ -1,16 +1,17 @@
 @each $name, $size in $occo-space {
+  $short-side: short-side($side);
   @each $side in $occo-sides {
-    .has-padding-#{$side}-#{$name} {
+    .has-padding-#{$side}-#{$name}, .has-p#{$short-side}-#{$name} {
       @include padding($name, $side);
     }
-    .has-margin-#{$side}-#{$name} {
+    .has-margin-#{$side}-#{$name}, .has-m#{$short-side}-#{$name} {
       @include margin($name, $side);
     }
   }
-  .has-padding-#{$name} {
+  .has-padding-#{$name}, .has-p-#{$name} {
     @include padding($name);
   }
-  .has-margin-#{$name} {
+  .has-margin-#{$name}, .has-m-#{$name} {
     @include margin($name);
   }
 
@@ -18,11 +19,11 @@
     .is-spaced-#{$direction}-#{$name} {
       @include spaced($size, $direction);
     }
-    .has-padding-#{$direction}-#{$name} {
+    .has-padding-#{$direction}-#{$name}, .has-p#{$direction}-#{$name} {
       @include padding($name, direction-begin($direction));
       @include padding($name, direction-end($direction));
     }
-    .has-margin-#{$direction}-#{$name} {
+    .has-margin-#{$direction}-#{$name}, .has-m#{$direction}-#{$name} {
       @include margin($name, direction-begin($direction));
       @include margin($name, direction-end($direction));
     }
@@ -33,16 +34,17 @@
 }
 
 @each $side in $occo-sides {
-  .has-no-padding-#{$side} {
+  $short-side: short-side($side);
+  .has-no-padding-#{$side}, .has-no-p#{$short-side} {
     @include no-padding($side);
   }
-  .has-no-margin-#{$side} {
+  .has-no-margin-#{$side}, .has-no-m#{$short-side} {
     @include no-margin($side);
   }
 }
-.has-no-padding {
+.has-no-padding, .has-no-p {
   @include no-padding;
 }
-.has-no-margin {
+.has-no-margin, .has-no-m {
   @include no-margin;
 }

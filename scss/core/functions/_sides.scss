@@ -20,6 +20,17 @@
   @return map-get($map, $side);
 }
 
+@function short-side($side)
+{
+  $map: (
+    top: t,
+    bottom: b,
+    left: l,
+    right: r,
+  ) !default;
+  @return map-get($map, $side);
+}
+
 @function direction-begin($direction) {
   $map: (
     v: top,

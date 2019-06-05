@@ -73,6 +73,10 @@ Returns the opposite of a side. E.g. `left` => `right`.
 
 Returns a tangent of a side. Only returns `top` or `left`. E.g. `top` => `left`.
 
+`short-side($side)`
+
+Returns a shorthand for a side. E.g. `top` => `t`.
+
 `direction-begin($direction)`
 
 Returns the begin side of a direction. E.g. `v` => `top`.
@@ -283,35 +287,35 @@ Applies `float: right`.
 
 Applies a simple clear fix.
 
-`.has-padding-#{$side}-#{$name}`
+`.has-padding-#{$side}-#{$name}, has-p#{$short-side}-#{$name}`
 
 Applies a padding of a named size to a side.
 
-`.has-padding-#{$name}`
+`.has-padding-#{$name}, has-p#{$short-side}`
 
 Applies a padding of a named size to all sides.
 
-`.has-no-padding-#{$side}`
+`.has-no-padding-#{$side}, .has-no-p#{$short-side}`
 
 Removes padding from a side.
 
-`.has-no-padding`
+`.has-no-padding, .has-no-p`
 
 Removes padding from all sides.
 
-`.has-margin-#{$side}-#{$name}`
+`.has-margin-#{$side}-#{$name}, has-m#{$short-side}-#{$name}`
 
 Applies a margin of a named size to a side.
 
-`.has-margin-#{$name}`
+`.has-margin-#{$name}, has-m#{$short-side}`
 
 Applies a margin of a named size to all sides.
 
-`.has-no-margin-#{$side}`
+`.has-no-margin-#{$side}, .has-no-m#{$short-side}`
 
 Removes margin from a side.
 
-`.has-no-margin`
+`.has-no-margin, .has-no-m`
 
 Removes margin from all sides.
 
